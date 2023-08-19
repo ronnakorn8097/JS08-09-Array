@@ -677,3 +677,10 @@ const sales = [
     type: 'Cash'
   }
 ];
+
+
+// 1. จำนวน transaction ทั้งหมด
+const totalTran = sales.length;
+console.log(`Total Transection of sales : ${totalTran}`);
+
+

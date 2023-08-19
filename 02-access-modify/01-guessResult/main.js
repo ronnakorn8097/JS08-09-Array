@@ -1,0 +1,7 @@
+// ผลลัพธ์ในบรรทัด * มีค่าเป็นอะไรและเพราะอะไร
+
+const arr = [1, 2, 4];
+const newArr = arr;
+
+arr[0] = 3;
+console.log(newArr[0]); // * 3 เพราะมีการ reassign ค่าใหม่ที่ index 0 จาก 1 เป็น 3
