@@ -20,4 +20,7 @@ function updateTask(id, newTask) {
     }
 }
 
+updateTask(1,'TOR');
+
+console.log(tasks);
 
