@@ -49,22 +49,28 @@
 // const newArr = array.filter(item => item == item.toUpperCase())
 // console.log(newArr);
     
-//9
+// 9
 // const array = ['Krabi', 'Chonburi', 'Buriram', 'Saraburi','Phrae'];
 // // ค่าที่มีคำว่า buri เป็นส่วนประกอบโดยไม่สนใจตัวพิมพ์เล็กหรือตัวพิมพ์ใหญ่
 
-// const newArr = array.filter(item => item === item.includes("buri",0));
+// const newArr = array.filter(item => item.includes("buri"));
 // console.log(newArr);
 
+//10
 // const array = [
-//     { name: 'Ben', age: 14 },
-//     { name: 'Phil', age: 18 },
-//     { name: 'John', age: 32 },
-//     { name: 'Ann', age: 16 },
-//     { name: 'Paul', age: 24 }
-//   ];
-//   // อายุไม่น้อยกว่า 18 
+// //     { name: 'Ben', age: 14 },
+// //     { name: 'Phil', age: 18 },
+// //     { name: 'John', age: 32 },
+// //     { name: 'Ann', age: 16 },
+// //     { name: 'Paul', age: 24 }
+// //   ];
+// //   // อายุไม่น้อยกว่า 18 
 
+// // const newArr = array.filter(item => item.age >= 18);
+// // console.log(newArr);
+
+
+//11
 // const array = [
 //     { id: 1, name: 'Pepsi' },
 //     { id: 2, name: 'Mirinda' },
@@ -76,22 +82,24 @@
 //   const newArr = array.filter(obj => obj.id !== 4)
 //   console.log(newArr);
 
-// const array = [
-//     { name: 'John', birth: '2001-07-31' },
-//     { name: 'Jack', birth: '1990-06-24' },
-//     { name: 'Jim', birth: '1984-12-13' },
-//     { name: 'Jeff', birth: '1996-02-05' },
-//     { name: 'Joe', birth: '2002-06-13' }
-//   ];
-//   // เกิดเดือน 6
 
-//   function filterFn(personObj,index,array)
-//   {
-//     const month = +personObj.birth.slice(5,7);
-//     if(month === 6) return true;
-//     else return false;
-//   }
+//12
+const array = [
+    { name: 'John', birth: '2001-07-31' },
+    { name: 'Jack', birth: '1990-06-24' },
+    { name: 'Jim', birth: '1984-12-13' },
+    { name: 'Jeff', birth: '1996-02-05' },
+    { name: 'Joe', birth: '2002-06-13' }
+  ];
+  // เกิดเดือน 6
 
-//   const filterLists = array.filter(filterFn);
-//   console.log(filterLists);
+  function filterFn(personObj,index,array)
+  {
+    const month = +personObj.birth.slice(5,7);
+    if(month === 6) return true;
+    else return false;
+  }
+
+  const filterLists = array.filter(filterFn);
+  console.log(filterLists);
 
